@@ -66,7 +66,7 @@ def all_winter_holiday_supplies(holiday_hash)
     supplies
   end.flatten
 =end
-holiday_hash[:winter].each do |holiday, supplies|
+holiday_hash[:winter].collect do |holiday, supplies|
   supplies
 end.flatten
 end
